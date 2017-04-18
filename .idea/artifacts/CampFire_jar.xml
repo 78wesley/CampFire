@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CampFire.jar">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="CampFire.jar">
+      <element id="module-output" name="CampFire" />
+    </root>
+  </artifact>
+</component>
