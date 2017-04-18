@@ -2,7 +2,6 @@ package nl.Wesley.Main;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-
 import java.util.logging.Logger;
 
 /**
@@ -12,7 +11,8 @@ import java.util.logging.Logger;
 public class CampFire extends JavaPlugin {
 
     //TODO Players can change te name so i cant delete the ArmorStand if de CustomName is changed.
-    //TODO ^Create a custom id. for removing or player can't change the ArmorStand customName.
+    //TODO ^Create a custom id for removing. or player can't change the ArmorStand customName idk how.
+    //TODO Send the Player a custom package for only showing him the ArmorStand customName;
 
     private Logger log = Logger.getLogger("minecraft");
     private CampFireLogFile settings = CampFireLogFile.getInstance();

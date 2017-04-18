@@ -94,9 +94,9 @@ class CampFireBuild {
     static void debugCampfires(){
         for (Entity e : log.keySet()) {
             e.setCustomNameVisible(true);
-            Bukkit.getScheduler().scheduleSyncDelayedTask(settings.getPlugin(), () -> {
-                e.setCustomNameVisible(false);
-            },200);
+            Bukkit.getScheduler().scheduleSyncDelayedTask(settings.getPlugin(), () ->
+                e.setCustomNameVisible(false)
+            ,200);
         }
     }
 

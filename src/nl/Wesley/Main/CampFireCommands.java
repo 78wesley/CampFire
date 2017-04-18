@@ -4,9 +4,7 @@ import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
-
 import static org.bukkit.ChatColor.*;
 
 /**
@@ -19,10 +17,10 @@ public class CampFireCommands implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String arg, String[] args) {
-        Player player = (Player) sender;
         if (cmd.getName().equalsIgnoreCase("campfire")) {
-            if (player.isOp() || player.hasPermission("campfire.command.use")) {
-                if (!(player instanceof ConsoleCommandSender)) {
+            if (sender instanceof Player) {
+                Player player = (Player) sender;
+                if (player.isOp() || player.hasPermission("campfire.command.use")) {
                     if (args.length == 0 || args.length > 2) {
                         player.sendMessage(RED + "Usage: /campfire <add|remove|debug|list|on|off|reload>");
                     } else {
@@ -143,10 +141,10 @@ public class CampFireCommands implements CommandExecutor {
                         }
                     }
                 } else {
-                    sender.sendMessage(RED + "You cant use it in the console");
+                    player.sendMessage(RED + "No Permission");
                 }
             } else {
-                player.sendMessage(RED + "No Permission");
+                sender.sendMessage(RED + "You cant use it in the console");
             }
         }
         return false;

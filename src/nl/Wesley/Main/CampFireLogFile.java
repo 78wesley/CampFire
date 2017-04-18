@@ -3,9 +3,7 @@ package nl.Wesley.Main;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
-
 import java.io.*;
-import java.net.URL;
 
 /**
  * All rights reserved.
