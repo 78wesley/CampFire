@@ -1,0 +1,25 @@
+name: CampFire
+description: Lets Build a CampFire.
+version: 1.0
+main: nl.Wesley.Main.CampFire
+authors: [78wesley]
+commands:
+    campfire:
+        description: Menu for the CampFire plugin.
+        permission: campfire.command.use
+
+permissions:
+    campfire.command.use:
+        description: Gives access to all campfire commands.
+    campfire.command.add:
+        description: Gives access to add campfire command.
+    campfire.command.remove:
+        description: Gives access to remove campfire command.
+    campfire.command.debug:
+        description: Gives access to debug campfire command.
+    campfire.command.list:
+        description: Gives access to list campfire command.
+    campfire.command.on:
+        description: Gives access to on campfire command.
+    campfire.command.off:
+        description: Gives access to off campfire command.
