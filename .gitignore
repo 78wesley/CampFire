@@ -1,3 +1,17 @@
-META-INF/
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/*
+!/.idea/copyright
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
 out/
-.idea/
