@@ -3,7 +3,11 @@ package nl.Wesley.Main;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
-import java.io.*;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 /**
  * All rights reserved.
@@ -32,7 +36,7 @@ public class CampFireLogFile {
         locationFileData = YamlConfiguration.loadConfiguration(locationFile);
         // Looks for defaults in the jar
         Reader defConfigStream = new InputStreamReader(plugin.getResource("Location.yml"));
-        if (defConfigStream == null) {
+        if (defConfigStream != null) {
             YamlConfiguration defConfig = YamlConfiguration.loadConfiguration(defConfigStream);
             locationFileData.setDefaults(defConfig);
             saveData();
@@ -54,7 +58,7 @@ public class CampFireLogFile {
     public void saveData() {
         try {
             locationFileData.save(locationFile);
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
