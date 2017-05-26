@@ -1,7 +1,10 @@
 # CampFire
-This is a plugin that i made for minecraft.
+This is a plugin that i made for Minecraft and its easy to use.
+With this plugin you can create a campfire for awesome looks on your server.
 
-With this plugin you can create a campfire for awesome looks in the server.
+## DOWNLOADLINK
+https://www.spigotmc.org/resources/campfire.39704/
+
 ## Command
 - With the "/campfire add <name>" you can create a CampFire.
 - With the "/campfire remove <name>" you can remove a CampFire.
