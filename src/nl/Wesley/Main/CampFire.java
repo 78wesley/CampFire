@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 public class CampFire extends JavaPlugin {
 
     //TODO Players can change te name so i cant delete the ArmorStand if de CustomName is changed.
+    //TODO MAYBE REMOVE AND ADD WITH THE UUID !
     //TODO ^Create a custom id for removing. or player can't change the ArmorStand customName idk how.
     //TODO Send the Player a custom package for only showing him the ArmorStand customName;
 

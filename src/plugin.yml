@@ -1,11 +1,11 @@
 name: CampFire
-description: Lets Build a CampFire.
+description: Lets build a CampFire for awesome Looks on your server.
 version: 1.0
 main: nl.Wesley.Main.CampFire
 authors: [78wesley]
 commands:
     campfire:
-        description: Menu for the CampFire plugin.
+        description: CampFire command.
         permission: campfire.command.use
 
 permissions:
