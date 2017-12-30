@@ -6,12 +6,13 @@ With this plugin you can create a campfire for awesome looks on your server.
 https://www.spigotmc.org/resources/campfire.39704/
 
 ## Command
-- With the "/campfire add <name>" you can create a CampFire.
-- With the "/campfire remove <name>" you can remove a CampFire.
-- With the "/campfire debug" you can see the names of each CampFire.
-- With the "/campfire list" you can see the list of all the CampFires.
-- With the "/campfire on <name>" you can turn on a CampFire.
-- With the "/campfire off <name>" you can turn off a CampFire.
+- With "/campfire add <name>" you can create a CampFire.
+- With "/campfire remove <name>" you can remove a CampFire.
+- With "/campfire debug" you can see the names of each CampFire.
+- With "/campfire list" you can see the list of all the CampFires.
+- With "/campfire on <name>" you can turn on a CampFire.
+- With "/campfire off <name>" you can turn off a CampFire.
+    
     
 ## Permissions
 - campfire.command.use:
@@ -21,4 +22,3 @@ https://www.spigotmc.org/resources/campfire.39704/
   - campfire.command.list
   - campfire.command.on
   - campfire.command.off
-      
